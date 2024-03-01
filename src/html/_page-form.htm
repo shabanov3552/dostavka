@@ -1,0 +1,41 @@
+<div class="page-form">
+   <div class="page-form__container">
+      <div class="page-form__content">
+         <h2 class="page-form__title main-title">@@title</h2>
+         <div class="page-form__text">@@text</div>
+      </div>
+      <div class="page-form__form">
+         <form action="" data-parsley-validate data-parsley-trigger="change">
+            <div class="form__line">
+               <label for="" class="form__label">Ваше имя*</label>
+               <input id="" type="text" name="" required class="form__input">
+               <svg class="form__clear-svg">
+                  <use xlink:href="img/icons/icons.svg#input_clear"></use>
+               </svg>
+            </div>
+            <div class="form__line">
+               <label for="" class="form__label">Телефон*</label>
+               <input required id="" type="tel" name="" class="form__input js_phone">
+               <svg class="form__clear-svg">
+                  <use xlink:href="img/icons/icons.svg#input_clear"></use>
+               </svg>
+            </div>
+            <div class="form__line">
+               <label for="" class="form__label">Комментарий</label>
+               <textarea required id="" autocomplete="off" name="" class="form__input"></textarea>
+               <svg class="form__clear-svg">
+                  <use xlink:href="img/icons/icons.svg#input_clear"></use>
+               </svg>
+            </div>
+            <div class="form__check">
+               <label class="checkbox">
+                  <input required class="checkbox__input" type="checkbox" value="1" name="consent">
+                  <span class="checkbox__chunk"></span>
+                  <span class="checkbox__text">Я даю свое <a href="">согласие на обработку персональных данных</a></span>
+               </label>
+            </div>
+            <button type="submit" class="form__button btn-red">Получить коммерческое предложение</button>
+         </form>
+      </div>
+   </div>
+</div>

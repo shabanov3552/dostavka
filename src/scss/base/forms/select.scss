@@ -43,7 +43,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background: url(../img/icons/arrow-select.svg) center center/12px 7px no-repeat;
+			background: url(@img/icons/arrow-select.svg) center center/12px 7px no-repeat;
 
 			._select-open & {
 				transform: rotate(-180deg);

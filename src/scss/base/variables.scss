@@ -2,11 +2,15 @@
 // colors palette
 // ===============
 :root {
+	// Цвета
 	--red-error: #ca2e33; // цвет ошибки в формах
 	--dark-black: #181818;
 	--dark-gray: #343434;
 	--dark-yellow: #ab8636;
 	--light-red: #ca2e33;
 	--light-yellow: #f5eab8;
-	--white: #fff;
+	--light-whit: #fff;
+	// Шрифты
+	--font-family: "Geometria", sans-serif;
+	--second-family: "Bebas Neue Cyrillic", sans-serif;
 }

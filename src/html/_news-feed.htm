@@ -1,0 +1,49 @@
+<div class="news-feed">
+   <div class="news-feed__container">
+      <h2 class="news-feed__title main-title">@@title</h2>
+      <div class="news-feed__slider swiper">
+         <div class="news-feed__slider-nav swiper-nav">
+            <button type="button" class="swiper-button-prev"></button>
+            <button type="button" class="swiper-button-next"></button>
+         </div>
+         <div class="news-feed__wrapper swiper-wrapper">
+            <div class="news-feed__slide swiper-slide">
+               @@include('./_news-card.htm',{
+               "src":"news-card_1.png",
+               "date":"02.03.2023",
+               "title":"Как правильно произвести погрузку на платформу"
+               })
+            </div>
+            <div class="news-feed__slide swiper-slide">
+               @@include('./_news-card.htm',{
+               "src":"news-card_2.png",
+               "date":"12.03.2023",
+               "title":"Главные ошибки в составлении договора на транспортировку грузов разных габаритов"
+               })
+            </div>
+            <div class="news-feed__slide swiper-slide">
+               @@include('./_news-card.htm',{
+               "src":"news-card_3.png",
+               "date":"02.10.2023",
+               "title":"Хранение груза на складе в Китае"
+               })
+            </div>
+            <div class="news-feed__slide swiper-slide">
+               @@include('./_news-card.htm',{
+               "src":"news-card_4.png",
+               "date":"14.12.2023",
+               "title":"Почему стоит выбрать доставку грузовым поездом"
+               })
+            </div>
+            <div class="news-feed__slide swiper-slide">
+               @@include('./_news-card.htm',{
+               "src":"news-card_3.png",
+               "date":"02.10.2023",
+               "title":"Хранение груза на складе в Китае"
+               })
+            </div>
+         </div>
+      </div>
+      <a href="" class="news-feed__link arrow-link">Смотреть все новости</a>
+   </div>
+</div>

@@ -246,9 +246,9 @@ function sidebarCatalogActions(e) {
 
 
          if (activeLink && activeLink !== targetElement) {
+            document.documentElement.classList.remove('sidebar-sub-catalog-open');
             activeLink.classList.remove('_sub-menu-active');
             activeBlock.classList.remove('_sub-menu-open');
-            document.documentElement.classList.remove('sidebar-sub-catalog-open');
          }
          document.documentElement.classList.add('sidebar-sub-catalog-open');
          targetElement.classList.add('_sub-menu-active');
@@ -426,4 +426,47 @@ document.addEventListener('change', e => {
    }
 });
 
+//#endregion
+
+//#region Функционал дропдаунов открыть\закрыть
+
+document.addEventListener("click", function (e) {
+   const target = e.target;
+   const ddWrapper = target.closest('[data-dropdown]');
+   const ddActive = document.querySelector('._dd-active');
+
+   if (ddWrapper) {
+      dropdownAction(e, ddWrapper, ddActive);
+   } else if (ddActive) {
+      ddActive.classList.remove('_dd-active');
+   }
+});
+
+function dropdownAction(e, ddWrapper, ddActive) {
+   const target = e.target;
+   const ddButton = ddWrapper.querySelector('[data-dropdown-button]');
+
+   if (target == ddButton) {
+      if (ddActive && ddActive !== ddWrapper) {
+         ddActive.classList.remove('_dd-active');
+      }
+
+      ddWrapper.classList.toggle('_dd-active');
+      e.preventDefault();
+   }
+}
+
+//#endregion
+
+//#region смешение грузовика на главной странице при прокрутке
+setTimeout(() => {
+   window.addEventListener('scroll', function (e) {
+
+      const truck = document.querySelector('.mp-first-block__truck');
+      if (truck && this.document.querySelector('.loaded')) {
+         truck.style.transform = `translateX(${window.pageYOffset}px)`;
+         truck.style.transitionDuration = 0 + 'ms';
+      }
+   })
+}, 1500)
 //#endregion

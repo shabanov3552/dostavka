@@ -1,7 +1,255 @@
 @@include('html/_header.htm',{
 "title":"Тайтл страницы",
-"modClass":""
+"modClass":"main-page"
 })
 <main class="page">
+   <div class="mp-first-block">
+      <div class="mp-first-block__container">
+         <h1 class="mp-first-block__title">Доставка грузов из Китая в Россию</h1>
+         <div class="mp-first-block__truck"><img src="@img/first-block-truck.svg" alt=""></div>
+         <div class="mp-first-block__offers">
+            <div class="mp-first-block__offer">
+               <img src="@img/star-gradient.svg" alt="">
+               <span>от 15 руб за кг</span>
+            </div>
+            <div class="mp-first-block__offer">
+               <img src="@img/star-gradient.svg" alt="">
+               <span>от 3х дней</span>
+            </div>
+         </div>
+         <a href="" class="mp-first-block__button btn-red">Получить расчет</a>
+      </div>
+      <div class="mp-first-block__bg">
+         <img src="@img/first-block-move-bg.svg" alt="" class="mp-first-block__bg-forest">
+         <img src="@img/first-block-road-bg.svg" alt="" class="mp-first-block__bg-road">
+      </div>
+   </div>
+
+   <div class="mp-second-block">
+      <div class="mp-second-block__container">
+         <div class="mp-second-block__image-ibg mp-second-block__image-ibg_contain"><img src="@img/mp-second-block__image.svg" alt=""></div>
+         <div class="mp-second-block__content">
+            <h2 class="mp-second-block__title">Предоставляем широкий спектр услуг для бизнеса любого размера</h2>
+            <div class="mp-second-block__col">
+               <a href="" class="mp-second-block__link arrow-link-big">Малому бизнесу</a>
+               <a href="" class="mp-second-block__link arrow-link-big">Среднему бизнесу</a>
+               <a href="" class="mp-second-block__link arrow-link-big">Крупному бизнесу</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="mp-advantages-block">
+      <div class="mp-advantages-block__container">
+         <h2 class="mp-advantages-block__title main-title">Преимущества</h2>
+         <div class="mp-advantages-block__grid">
+            @@include('html/_mp-advatages.htm',{
+            "text":"Оптимизация сроков и стоимости доставки из Китая за счёт использования мостового таможенного пункта пропуска ХэйХэ - Благовещенск",
+            "number":"01"
+            })
+            @@include('html/_mp-advatages.htm',{
+            "text":"Предоставление собственной инфраструктуры: складов, контейнеров, траспорта, Ж/Д-тупика, подъёмной техники",
+            "number":"02"
+            })
+            @@include('html/_mp-advatages.htm',{
+            "text":"Подготовка сопроводительных документов и отправка товаров через мостовое и речное сообщение Хэйхэ — Благовещенск",
+            "number":"03"
+            })
+            @@include('html/_mp-advatages.htm',{
+            "text":"Собственный штат водителей имеющие разрешения на въезд в Хэйхэ через мостовой переход",
+            "number":"04"
+            })
+            @@include('html/_mp-advatages.htm',{
+            "text":"Погрузка и отправка в режиме импорт/экспорт крытых вагонов, спецтехники, фитинговых платформ, контейнеров, не габаритных и крупнотоннажных товаров",
+            "number":"05"
+            })
+         </div>
+      </div>
+   </div>
+
+   <div class="mp-price-block">
+      <div class="mp-price-block__container">
+         <h2 class="mp-price-block__title main-title">В стоимость включены:</h2>
+         <div class="mp-price-block__grid">
+            @@include('html/_text-card.htm',{
+            "class":"red",
+            "src":"img/text-card-star_gradient.svg",
+            "text":"Подбор оптимальной логистической схемы"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"red",
+            "src":"img/text-card-star_gradient.svg",
+            "text":"Терминальные расходы при отправке *"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"red",
+            "src":"img/text-card-star_gradient.svg",
+            "text":"Доставка до склада грузополучателя"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"red",
+            "src":"img/text-card-star_gradient.svg",
+            "text":"Страхование грузов"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"red",
+            "src":"img/text-card-star_gradient.svg",
+            "text":"Международная перевозка до границы таможенного союза и размещение на таможенном терминале"
+            })
+         </div>
+         <div class="mp-price-block__note">
+            @@include('html/_note.htm',{
+            "text":"Приемка груза, оформление транспортных документов, погрузка, консолидация грузов от разных отправителей "
+            })
+         </div>
+      </div>
+   </div>
+
+   <div class="mp-options-block">
+      <div class="mp-options-block__container">
+         <h2 class="mp-options-block__title main-title">В стоимость включены:</h2>
+         <div class="mp-options-block__grid">
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Доставку со склада грузоотправителя"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Оформление экспортной декларации для отправителя"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Комплексные услуги таможенного оформления и сертификации грузов"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Терминальные расходы при получении *"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Представительские услуги в случае досмотра"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Расформирование контейнера на территории России"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Оформление внутреннего таможенного транзита до нужного таможенного поста"
+            })
+            <div class="mp-options-block__note">
+               @@include('html/_note.htm',{
+               "text":"Приемка груза, погрузо-разгрузочные работы, хранение и услуги склада при таможенных операциях "
+               })
+            </div>
+         </div>
+         <div class="mp-options-block__bottom">
+            @@include('html/_request-price.htm',{})
+         </div>
+      </div>
+   </div>
+
+   <div class="mp-cargo-block">
+      <div class="mp-cargo-block__container">
+         <h2 class="mp-cargo-block__title main-title">Способы оформления и вывоза груза</h2>
+         <div class="mp-cargo-block__grid">
+            <div class="mp-cargo-block__card">
+               <div class="mp-cargo-block__card-image"><img src="@img/coin-red.svg" alt=""></div>
+               <div class="mp-cargo-block__card-title">Под ваш контракт</div>
+               <div class="mp-cargo-block__card-text">Вы сами покупаете товар у китайского поставщика и доверяете нам доставку из Китая в Россию.</div>
+            </div>
+            <div class="mp-cargo-block__card">
+               <div class="mp-cargo-block__card-image"><img src="@img/logo-small.svg" alt=""></div>
+               <div class="mp-cargo-block__card-title">Под наш контракт</div>
+               <div class="mp-cargo-block__card-text">Вы полностью делегируете процесс выкупа и доставки нашей компании.</div>
+            </div>
+            <div class="mp-cargo-block__card">
+               <div class="mp-cargo-block__card-image"><img src="@img/coin-gold.svg" alt=""></div>
+               <div class="mp-cargo-block__card-title">Карго</div>
+               <div class="mp-cargo-block__card-text">Наименее затратный способ доставки товаров из Китая в Россию. Подходит для небольших партий товаров.</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   @@include('html/_work-stages.htm',{})
+
+   @@include('html/_page-form.htm',{
+   "title":"Запросить коммерческое предложение",
+   "text":"Оставьте контактные данные и мы подготовим коммерческое предложение для решения вашей задачи"
+   })
+
+
+   @@include('html/_news-feed.htm',{
+   "title":"Новости"
+   })
+
+   <div class="mp-currency-rate">
+      <div class="mp-currency-rate__container">
+         <div class="mp-currency-rate__content">
+            <h2 class="mp-currency-rate__title main-title">Курс валют</h2>
+            <div class="mp-currency-rate__date">Дата обновления: <span>26.12.2023</span></div>
+            <div class="mp-currency-rate__chunk">
+               <div class="mp-currency-rate__row">
+                  <div class="mp-currency-rate__name">USD ($)</div>
+                  <div class="mp-currency-rate__quote">91.9389</div>
+                  <div class="mp-currency-rate__difference mp-currency-rate__difference_green">+0.2327</div>
+               </div>
+               <div class="mp-currency-rate__row">
+                  <div class="mp-currency-rate__name">EUR (€)</div>
+                  <div class="mp-currency-rate__quote">101.2863</div>
+                  <div class="mp-currency-rate__difference mp-currency-rate__difference_green">+0.7750</div>
+               </div>
+               <div class="mp-currency-rate__row">
+                  <div class="mp-currency-rate__name">CNY (¥)</div>
+                  <div class="mp-currency-rate__quote">128.3790</div>
+                  <div class="mp-currency-rate__difference mp-currency-rate__difference_red">-0.2190</div>
+               </div>
+            </div>
+         </div>
+         <div class="mp-currency-rate__image-ibg mp-currency-rate__image-ibg_contain"><img src="@img/mp-currency-rate-image.svg" alt=""></div>
+      </div>
+   </div>
+
+   <div class="mp-clients">
+      <div class="mp-clients__container">
+         <div class="mp-clients__header">
+            <h2 class="mp-clients__title main-title">Наши клиенты</h2>
+            <div class="mp-clients__descr">Среди наших клиентов оптовые и розничные торговые компании (электроника, одежда, мебель, часы, сувениры), частные лица, индивидуальные предприниматели</div>
+            <div class="mp-clients__slider-nav swiper-nav">
+               <button type="button" class="swiper-button-prev"></button>
+               <button type="button" class="swiper-button-next"></button>
+            </div>
+         </div>
+         <div class="mp-clients__slider swiper">
+            <div class="mp-clients__wrapper swiper-wrapper">
+               <div class="mp-clients__slide swiper-slide">
+                  <img src="@img/client-1.png" alt="">
+               </div>
+               <div class="mp-clients__slide swiper-slide">
+                  <img src="@img/client-2.png" alt="">
+               </div>
+               <div class="mp-clients__slide swiper-slide">
+                  <img src="@img/client-3.png" alt="">
+               </div>
+               <div class="mp-clients__slide swiper-slide">
+                  <img src="@img/client-4.png" alt="">
+               </div>
+               <div class="mp-clients__slide swiper-slide">
+                  <img src="@img/client-5.png" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   @@include('html/_faq-block.htm',{})
 </main>
 @@include('html/_footer.htm',{})

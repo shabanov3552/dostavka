@@ -1,5 +1,6 @@
 .swiper {
 	overflow: hidden;
+	min-width: 0;
 }
 
 .swiper-initialized {
@@ -43,4 +44,51 @@
 
 .swiper-button-lock {
 	display: none !important;
+}
+
+.swiper-nav {
+	display: flex;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	position: relative;
+	border: 1px solid var(--light-whit);
+	width: 72px;
+	height: 56px;
+	transition: all 0.3s ease 0s;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background: #666;
+		}
+	}
+
+	&::before {
+		content: '';
+		width: 40px;
+		height: 40px;
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		display: block;
+	}
+}
+
+.swiper-button-prev {
+	border-radius: 10px 0 0 10px;
+
+	&::before {
+		background: url('@img/icons/arrow-slider-left.svg') 0 0 no-repeat;
+	}
+}
+
+.swiper-button-next {
+	border-radius: 0 10px 10px 0;
+	transform: translateX(-1px);
+
+	&::before {
+		background: url('@img/icons/arrow-slider-right.svg') 0 0 no-repeat;
+	}
 }

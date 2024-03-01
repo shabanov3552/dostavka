@@ -19,7 +19,7 @@ body::after {
 }
 
 .popup {
-	cursor: url(../img/icons/icon_close-cursor-black.svg) 14 14, move;
+	cursor: url(@img/icons/icon_close-cursor-black.svg) 14 14, move;
 	position: fixed;
 	top: 0;
 	left: 0;
