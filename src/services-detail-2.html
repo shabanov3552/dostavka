@@ -1,0 +1,99 @@
+@@include('html/_header.htm',{
+"title":"Агентирование",
+"modClass":"services-detail-page"
+})
+<main class="page">
+
+   <div class="services-detail services-detail_grey"> <!-- Добавить класс services-detail_grey на страницах Агентирование, Сертификация, Таможенное оформление, -->
+      <div class="services-detail__container">
+         @@include('html/_breadcrumbs.htm',{})
+         <div class="services-detail__grid">
+            <div class="services-detail__content">
+               <h1 class="services-detail__title main-title">Агентирование</h1>
+               <div class="services-detail__descr">
+                  <p>Услуга агентирования позволяет вам получить растаможенный товар на вашем складе от нашего российского юридического лица. Это выгодно, так как вы минимизируете риск дополнительных расходов, экономите время и деньги на покупаемый товар остаются за вашей компанией</p>
+                  <p>Наша компания имеет большой опыт в области международных грузоперевозок и таможенного оформления. Мы предлагаем качественный сервис, соответствующий всем стандартам международной логистики, и контролируем все этапы перевозки, чтобы обеспечить соблюдение сроков и избежать дополнительных затрат.</p>
+               </div>
+               @@include('html/_text-card.htm',{
+               "class":"black",
+               "src":"img/text-card-star_gradient.svg",
+               "text":"Мы предлагаем комплексное сопровождение внешнеторговой сделки по импорту товаров от нашего имени под ключ"
+               })
+            </div>
+            <div class="services-detail__image-ibg services-detail__image-ibg_contain"><img src="@img/services-card-7.svg" alt=""></div>
+         </div>
+         @@include('html/_request-price.htm',{})
+      </div>
+   </div>
+
+   <div class="sd-support">
+      <div class="sd-support__container">
+         <h2 class="sd-support__title main-title">Что включает комплексное сопровождение</h2>
+         <div class="sd-support__grid">
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Оформление внешнеэкономического контракта"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Проверка производителя или поставщика"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Конвертация валюты и перевод за импортируемые товары"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Ввоз товаров на территорию РФ"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Оформление сертификатов и иной разрешительной документации"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Подготовка сопроводительной документации на груз"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Участие в досмотрах и прочих процедурах таможенного контроля"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Бухгалтерское сопровождение внешнеторговых операций"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Доставка по России до склада"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Таможенное оформление"
+            })
+         </div>
+      </div>
+   </div>
+
+   @@include('html/_work-stages.htm',{})
+
+   @@include('html/_page-form.htm',{
+   "title":"Расчет доставки",
+   "text":"Узнайте стоимость и сроки доставки вашего груза уже сегодня"
+   })
+
+   @@include('html/_faq-block.htm',{})
+
+   @@include('html/_services-feed.htm',{})
+
+</main>
+@@include('html/_footer.htm',{})

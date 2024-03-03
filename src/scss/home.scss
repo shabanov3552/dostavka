@@ -363,6 +363,11 @@
    &__link {
       padding-bottom: 32px;
       border-bottom: 1px solid #fff;
+
+      &::after {
+         position: static;
+         transform: translateY(0px);
+      }
    }
 }
 

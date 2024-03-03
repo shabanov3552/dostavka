@@ -1,0 +1,237 @@
+.services {
+   padding-top: rem(80);
+   padding-bottom: rem(120);
+
+   @media (max-width:$md) {
+      padding-top: rem(32);
+      padding-bottom: rem(80);
+   }
+
+   // .services__container
+
+   &__container {}
+
+   // .services__header
+
+   &__header {
+      margin-bottom: rem(80);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 78px;
+
+      @media (max-width:$md) {
+         display: block;
+         margin-bottom: rem(40);
+      }
+   }
+
+   // .services__title
+
+   &__title {
+      @media (max-width:$md) {
+         margin-bottom: rem(24);
+      }
+   }
+
+   // .services__descr
+
+   &__descr {
+      max-width: 692px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 127%;
+   }
+
+   // .services__grid
+
+   &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 84px 20px;
+
+      @media (max-width:$xl) {
+         grid-template-columns: repeat(3, 1fr);
+         gap: 64px 16px;
+      }
+
+      @media (max-width:$lg) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width:$md) {
+         grid-template-columns: 1fr;
+         gap: 40px;
+      }
+   }
+}
+
+//========================================================================================================================================================
+
+.services-detail {
+   background: var(--dark-black);
+   padding-top: rem(80);
+   padding-bottom: rem(125);
+
+   @media (max-width:$md) {
+      padding-top: rem(32);
+      padding-bottom: rem(80);
+   }
+
+   // .services-detail_grey
+
+   &_grey {
+      background: var(--dark-gray);
+   }
+
+   // .services-detail__container
+
+   &__container {}
+
+   // .services-detail__grid
+
+   &__grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      margin-bottom: rem(50);
+
+      @media (max-width:$md) {
+         grid-template-columns: 1fr;
+         gap: 40px;
+         justify-items: center;
+      }
+   }
+
+   // .services-detail__image-ibg
+
+   &__image-ibg {
+      width: 960px;
+      height: 557px;
+      position: sticky;
+      top: 20px;
+
+      @media (max-width:$pc) {
+         width: 568px;
+         height: 327px;
+      }
+
+      @media (max-width:$xl) {
+         width: 452px;
+         height: 261px;
+      }
+
+      @media (max-width:$lg) {
+         width: 343px;
+         height: 197px;
+      }
+
+      @media (max-width:$md) {
+         grid-row: 1/2;
+         position: relative;
+         top: auto;
+      }
+
+      @media (max-width:$xs) {
+         width: 100%;
+      }
+   }
+
+   // .services-detail__content
+
+   &__content {
+      .text-card {
+         max-width: 687px;
+      }
+
+      .text-card__text {
+         @media (max-width:$sm) {
+            font-size: 18px;
+         }
+      }
+   }
+
+   // .services-detail__title
+
+   &__title {
+      margin-bottom: rem(48);
+   }
+
+   // .services-detail__descr
+
+   &__descr {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 125%;
+
+      ul,
+      ol {
+         padding-left: rem(25);
+         margin-bottom: rem(24);
+
+         li {
+            padding: rem(5) 0;
+         }
+      }
+
+      ul {
+         padding-left: rem(25);
+         margin-bottom: rem(24);
+
+         li {
+            list-style: disc;
+         }
+      }
+
+      a {
+         color: var(--light-blue);
+
+         @media (any-hover: hover) {
+            &:hover {
+               text-decoration: underline;
+            }
+         }
+      }
+
+      p {
+         margin-bottom: rem(24);
+      }
+   }
+}
+
+//========================================================================================================================================================
+
+.sd-support {
+   background: var(--dark-black) url(@img/sd-support-hieroglyph.svg) 100% calc(100% - 107px) no-repeat;
+   padding: rem(120) 0;
+
+   @media (max-width:$md) {
+      padding: rem(80) 0;
+   }
+
+   // .sd-support__container
+
+   &__container {}
+
+   // .sd-support__title
+
+   &__title {
+      margin-bottom: rem(80);
+   }
+
+   // .sd-support__grid
+
+   &__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+
+      @media (max-width:$xl) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width:$lg) {
+         grid-template-columns: 1fr;
+      }
+   }
+}
+
+//========================================================================================================================================================

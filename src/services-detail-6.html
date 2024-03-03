@@ -1,0 +1,38 @@
+@@include('html/_header.htm',{
+"title":"Сертификация",
+"modClass":"services-detail-page"
+})
+<main class="page">
+
+   <div class="services-detail services-detail_grey"> <!-- Добавить класс services-detail_grey на страницах Агентирование, Сертификация, Таможенное оформление, -->
+      <div class="services-detail__container">
+         @@include('html/_breadcrumbs.htm',{})
+         <div class="services-detail__grid">
+            <div class="services-detail__content">
+               <h1 class="services-detail__title main-title">Сертификация</h1>
+               <div class="services-detail__descr">
+                  <p>Сертификация товаров при доставке их Китая в Россию является обязательной процедурой, направленной на обеспечение качества и безопасности продукции для потребителей. Важно соблюдать все этапы процесса сертификации, чтобы избежать проблем при ввозе товаров на территорию России. </p>
+                  <p>Наша компания помогает клиентам собрать все необходимые документы, подаем их в соответствующие организации и консультируем по вопросам сертификации. Наши специалисты оформляют российские сертификаты соответствия и декларации, такие как ТР ТС, ГОСТ Р и СГР. Мы работаем быстро, и на оформление простых сертификатов уходит всего 1 рабочий день. Для ускорения процесса используются электронные копии документов, а оригиналы доставляются курьером. Все, что нужно сделать клиенту - это просто сообщить нам о необходимости сертификации, остальное сделают наши специалисты.</p>
+               </div>
+            </div>
+            <div class="services-detail__image-ibg services-detail__image-ibg_contain"><img src="@img/services-card-3.svg" alt=""></div>
+         </div>
+         @@include('html/_request-price.htm',{})
+      </div>
+   </div>
+
+   @@include('html/_certification-block.htm',{})
+
+   @@include('html/_work-stages.htm',{})
+
+   @@include('html/_page-form.htm',{
+   "title":"Расчет доставки",
+   "text":"Узнайте стоимость и сроки доставки вашего груза уже сегодня"
+   })
+
+   @@include('html/_faq-block.htm',{})
+
+   @@include('html/_services-feed.htm',{})
+
+</main>
+@@include('html/_footer.htm',{})

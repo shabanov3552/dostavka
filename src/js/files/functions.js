@@ -261,6 +261,9 @@ export function spollers() {
 						hideSpollersBody(spollersBlock);
 					}
 					spollerTitle.classList.toggle('_spoller-active');
+					if (spollerTitle.closest('.case-card')) {
+						spollerTitle.closest('.case-card').classList.toggle('_spoller-active')
+					}
 					_slideToggle(spollerTitle.nextElementSibling, spollerSpeed);
 				}
 				e.preventDefault();
@@ -271,6 +274,11 @@ export function spollers() {
 			const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
 			if (spollerActiveTitle && !spollersBlock.querySelectorAll('._slide').length) {
 				spollerActiveTitle.classList.remove('_spoller-active');
+
+				if (spollerActiveTitle.closest('.case-card')) {
+					spollerActiveTitle.closest('.case-card').classList.remove('_spoller-active')
+				}
+
 				_slideUp(spollerActiveTitle.nextElementSibling, spollerSpeed);
 			}
 		}
@@ -285,6 +293,11 @@ export function spollers() {
 						if (spollersBlock.classList.contains('_spoller-init')) {
 							const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
 							spollerClose.classList.remove('_spoller-active');
+
+							if (spollerClose.closest('.case-card')) {
+								spollerClose.closest('.case-card').classList.remove('_spoller-active')
+							}
+
 							_slideUp(spollerClose.nextElementSibling, spollerSpeed);
 						}
 					});

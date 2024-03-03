@@ -91,6 +91,14 @@
 	&__text {
 		color: var(--light-whit);
 
+		.parsley-error & {
+			color: var(--red-error);
+
+			a {
+				color: var(--red-error);
+			}
+		}
+
 		a {
 			color: #33caff;
 

@@ -5,6 +5,8 @@
 <main class="page">
    <div class="news">
       <div class="news__container">
+         @@include('html/_breadcrumbs.htm',{})
+         <h1 class="news__title main-title">Новости</h1>
          <div class="news__grid">
             @@include('html/_news-card.htm',{
             "src":"news-card_1.png",
@@ -54,7 +56,7 @@
             @@include('html/_news-card.htm',{
             "src":"news-card_3.png",
             "date":"02.10.2023",
-            "title":"Хранение груза на складе в Китае"
+            "title":"Главные ошибки в составлении договора на транспортировку грузов разных габаритов"
             })
             @@include('html/_news-card.htm',{
             "src":"news-card_4.png",
@@ -67,7 +69,12 @@
             "title":"Почему стоит выбрать доставку грузовым поездом"
             })
          </div>
+         @@include('html/_pagging.htm',{})
       </div>
    </div>
+   @@include('html/_page-form.htm',{
+   "title":"Узнайте о наших услугах подробнее",
+   "text":"Задайте вопрос или расскажите о своих задачах. Наши специалисты проконсультируют вас."
+   })
 </main>
 @@include('html/_footer.htm',{})

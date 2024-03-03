@@ -1,8 +1,12 @@
 .breadcrumbs {
 	position: relative;
 	z-index: 1;
-	margin-bottom: rem(18);
+	margin-bottom: rem(28);
 	display: flex;
+
+	@media (max-width:$md) {
+		margin-bottom: rem(24);
+	}
 
 	.page-contacts.page-left-margin & {
 		padding-left: rem(0);
@@ -65,18 +69,18 @@
 	// .breadcrumbs__li
 
 	&__li {
-		margin: rem(0) rem(15) rem(5) rem(0);
+		margin: rem(0) rem(8) rem(5) rem(0);
 		display: flex;
 		align-items: center;
 		white-space: nowrap;
 
 		&:not(:last-child) {
 			&::after {
-				content: '/';
+				content: url(@img/icons/icon_bread.svg);
 				display: block;
 				// height: 70%;
 				// width: 2px;
-				margin-left: rem(15);
+				margin-left: rem(8);
 			}
 		}
 	}
@@ -84,8 +88,8 @@
 	// .breadcrumbs__link
 
 	&__link {
-		color: #000;
-		font-size: 14px;
+		color: var(--light-whit);
+		font-size: 16px;
 		line-height: 22px;
 		white-space: nowrap;
 
@@ -110,8 +114,8 @@
 	// .breadcrumbs__item
 
 	&__item {
-		color: #000;
-		font-size: 14px;
+		color: var(--light-whit);
+		font-size: 16px;
 		line-height: 22px;
 		white-space: nowrap;
 

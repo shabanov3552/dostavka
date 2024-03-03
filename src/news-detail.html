@@ -1,0 +1,84 @@
+@@include('html/_header.htm',{
+"title":"Новости деталка",
+"modClass":"news-detail-page"
+})
+<main class="page">
+   <div class="news-detail">
+      <div class="news-detail__container">
+         @@include('html/_breadcrumbs.htm',{})
+         <div class="news-detail__first-block">
+            <div class="news-detail__fb-ibg"><img src="@img/news-card_6.png" alt=""></div>
+            <div class="news-detail__fb-header">
+               <h1 class="news-detail__title main-title">Почему стоит выбрать доставку грузовым поездом</h1>
+               <div class="news-detail__date">14.12.2023</div>
+               <button type="button" id="share-button" class="button-share">
+                  <svg>
+                     <use xlink:href="img/icons/icons.svg#icon_share"></use>
+                  </svg>
+                  <span>Поделиться</span>
+               </button>
+            </div>
+         </div>
+         <div class="news-detail__content">
+            <p>В рамках данной услуги специалисты проводят анализ рынка, поиск потенциальных поставщиков, сбор информации о них, проверку их надежности и деловой репутации. Также осуществляется проверка наличия необходимых лицензий и сертификатов, контроль выполнения контрактных обязательств и решение возникающих вопросов и проблем в процессе сотрудничества.</p>
+            <p>Результатом услуги является предоставление клиенту полной и достоверной информации о потенциальных партнерах, что позволяет принять обоснованное решение о выборе поставщика и заключении контракта на поставку товаров из Китая.</p>
+            @@include('html/_text-card.htm',{
+            "class":"grey",
+            "src":"img/text-card-star_gradient.svg",
+            "text":"Услуга поиска и проверки контрагентов может быть полезна как для начинающих предпринимателей, так и для опытных компаний, которые стремятся расширить свой бизнес и выйти на новые рынки."
+            })
+            <p>В рамках данной услуги специалисты проводят анализ рынка, поиск потенциальных поставщиков, сбор информации о них, проверку их надежности и деловой репутации. Также осуществляется проверка наличия необходимых лицензий и сертификатов, контроль выполнения контрактных обязательств и решение возникающих вопросов и проблем в процессе сотрудничества.</p>
+            <p>Результатом услуги является предоставление клиенту полной и достоверной информации о потенциальных партнерах, что позволяет принять обоснованное решение о выборе поставщика и заключении контракта на поставку товаров из Китая.</p>
+            <img src="@img/news-card_5.png" alt="">
+            <p>В рамках данной услуги специалисты проводят анализ рынка, поиск потенциальных поставщиков, сбор информации о них, проверку их надежности и деловой репутации. Также осуществляется проверка наличия необходимых лицензий и сертификатов, контроль выполнения контрактных обязательств и решение возникающих вопросов и проблем в процессе сотрудничества.</p>
+            <p>Результатом услуги является предоставление клиенту полной и достоверной информации о потенциальных партнерах, что позволяет принять обоснованное решение о выборе поставщика и заключении контракта на поставку товаров из Китая.</p>
+         </div>
+         <div class="news-detail__gallery">
+            <div class="news-detail__slider swiper">
+               <div class="news-detail__slider-nav swiper-nav">
+                  <button type="button" class="swiper-button-prev"></button>
+                  <button type="button" class="swiper-button-next"></button>
+               </div>
+               <div class="news-detail__wrapper swiper-wrapper" data-gallery>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_7.png">
+                     <img src="@img/news-card_7.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_8.png">
+                     <img src="@img/news-card_8.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_9.png">
+                     <img src="@img/news-card_9.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_6.png">
+                     <img src="@img/news-card_6.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_5.png">
+                     <img src="@img/news-card_5.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_4.png">
+                     <img src="@img/news-card_4.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_3.png">
+                     <img src="@img/news-card_3.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_2.png">
+                     <img src="@img/news-card_2.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_1.png">
+                     <img src="@img/news-card_1.png" alt="">
+                  </div>
+               </div>
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   @@include('html/_news-feed.htm',{
+   "title":"Читайте также"
+   })
+   @@include('html/_page-form.htm',{
+   "title":"Узнайте о наших услугах подробнее",
+   "text":"Задайте вопрос или расскажите о своих задачах. Наши специалисты проконсультируют вас."
+   })
+</main>
+@@include('html/_footer.htm',{})

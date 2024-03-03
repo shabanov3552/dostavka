@@ -1,0 +1,38 @@
+@@include('html/_header.htm',{
+"title":"Сборные грузы",
+"modClass":"services-detail-page"
+})
+<main class="page">
+
+   <div class="services-detail"> <!-- Добавить класс services-detail_grey на страницах Агентирование, Сертификация, Таможенное оформление, -->
+      <div class="services-detail__container">
+         @@include('html/_breadcrumbs.htm',{})
+         <div class="services-detail__grid">
+            <div class="services-detail__content">
+               <h1 class="services-detail__title main-title">Доставка сборных грузов из Китая в Россию</h1>
+               <div class="services-detail__descr">
+                  <p>Доставка сборных грузов из Китая в Россию становится все более популярной среди предпринимателей и компаний различных отраслей. Это связано с рядом преимуществ, которые предлагает данная услуга. Прежде всего, это экономия средств, так как стоимость доставки делится между всеми участниками перевозки. Кроме того, сроки доставки сборных грузов обычно короче, чем при перевозке полного контейнера</p>
+                  <p>Перевозка сборными грузами позволяет существенно снизить стоимость транспортировки малогабаритных грузов. Например, перевозка 1-2 куб. метров груза морским транспортом может стоить около 100 000 рублей из-за необходимости зафрахтовать целый контейнер. Однако при сборной грузоперевозке стоимость снижается до 20 000-30 000 рублей, что значительно меньше. Это особенно выгодно для владельцев малогабаритных товаров</p>
+               </div>
+            </div>
+            <div class="services-detail__image-ibg services-detail__image-ibg_contain"><img src="@img/services-card-1.svg" alt=""></div>
+         </div>
+         @@include('html/_request-price.htm',{})
+      </div>
+   </div>
+
+
+
+   @@include('html/_work-stages.htm',{})
+
+   @@include('html/_page-form.htm',{
+   "title":"Расчет доставки",
+   "text":"Узнайте стоимость и сроки доставки вашего груза уже сегодня"
+   })
+
+   @@include('html/_faq-block.htm',{})
+
+   @@include('html/_services-feed.htm',{})
+
+</main>
+@@include('html/_footer.htm',{})
