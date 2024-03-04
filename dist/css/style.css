@@ -4423,9 +4423,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .mp-first-block__title {
     grid-row: auto;
     grid-column: auto;
-    -webkit-transform: translateX(calc(-160% - 70px - 0vw));
-        -ms-transform: translateX(calc(-160% - 70px - 0vw));
-            transform: translateX(calc(-160% - 70px - 0vw));
+    -webkit-transform: translateX(calc(-160% - 70px - 1vw));
+        -ms-transform: translateX(calc(-160% - 70px - 1vw));
+            transform: translateX(calc(-160% - 70px - 1vw));
   }
 
   .mp-first-block__offers {
