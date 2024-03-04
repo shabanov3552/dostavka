@@ -234,6 +234,23 @@
 						position: static;
 					}
 				}
+
+			}
+
+			&._dd-active {
+				.menu__link {
+					color: var(--light-yellow);
+
+					&::before {
+						opacity: 1;
+						visibility: visible;
+					}
+
+					&::after {
+						transform: rotate(-180deg);
+						background: url('@img/icons/arrow-dropdown-active.svg') center no-repeat;
+					}
+				}
 			}
 		}
 	}
@@ -255,20 +272,6 @@
 
 	&__link {
 		font-size: 20px;
-
-		._dd-active & {
-			color: var(--light-yellow);
-
-			&::before {
-				opacity: 1;
-				visibility: visible;
-			}
-
-			&::after {
-				transform: rotate(-180deg);
-				background: url('@img/icons/arrow-dropdown-active.svg') center no-repeat;
-			}
-		}
 
 		@media (max-width:$xl) {
 			padding: rem(16) 0;

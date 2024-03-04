@@ -2144,6 +2144,22 @@ body::after {
   transition: all 0.3s ease 0s;
 }
 
+.menu__item_dropdown._dd-active .menu__link {
+  color: var(--light-yellow);
+}
+
+.menu__item_dropdown._dd-active .menu__link::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__item_dropdown._dd-active .menu__link::after {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  background: url("../img/icons/arrow-dropdown-active.svg") center no-repeat;
+}
+
 .menu__dropdown {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -2158,22 +2174,6 @@ body::after {
 
 .menu__link {
   font-size: 20px;
-}
-
-._dd-active .menu__link {
-  color: var(--light-yellow);
-}
-
-._dd-active .menu__link::before {
-  opacity: 1;
-  visibility: visible;
-}
-
-._dd-active .menu__link::after {
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  background: url("../img/icons/arrow-dropdown-active.svg") center no-repeat;
 }
 
 .icon-menu {
