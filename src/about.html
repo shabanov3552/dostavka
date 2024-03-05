@@ -1,0 +1,72 @@
+@@include('html/_header.htm',{
+"title":"О компании",
+"modClass":"about-page"
+})
+<main class="page">
+
+   <div class="about">
+      <div class="about__container">
+         @@include('html/_breadcrumbs.htm',{})
+         <div class="about__grid">
+            <div class="about__content">
+               <h1 class="about__title main-title">О компании</h1>
+               <div class="about__descr">
+                  <p>Компания Meifort специализируется на предоставлении высококачественных и надежных услуг по доставке грузов из Китая в Россию.</p>
+                  <p>Мы обеспечиваем максимальную эффективность и безопасность грузоперевозок между двумя крупнейшими экономиками мира. Предлагаем полный комплекс услуг, включая таможенное оформление, страхование грузов, а также консультации по вопросам логистики и импорта/экспорта.</p>
+                  <p>Обладаем обширным опытом работы с различными видами грузов, включая промышленные товары, электронику, одежду, аксессуары, обувь, мебель, строительные материалы, запчасти для автомобилей и многое другое. Благодаря тесному сотрудничеству с ведущими китайскими производителями и перевозчиками, мы можем предложить нашим клиентам наиболее оптимальные и выгодные условия доставки.</p>
+                  <p>Наши специалисты постоянно следят за изменениями в законодательстве и логистических схемах, чтобы гарантировать нашим клиентам полную безопасность и надежность доставки их грузов. Мы используем только современные транспортные средства и технологии для минимизации времени доставки и снижения затрат на перевозку.</p>
+               </div>
+               @@include('html/_text-card.htm',{
+               "class":"grey",
+               "src":"img/text-card-star_gradient.svg",
+               "text":"Компания Meifort гарантирует своим клиентам: Оперативную доставку грузов, а также полное соблюдение всех таможенных и налоговых требований."
+               })
+            </div>
+            <div class="about__image-ibg about__image-ibg_contain"><img src="@img/about.svg" alt=""></div>
+         </div>
+      </div>
+   </div>
+   <div class="about-gallery">
+      <div class="about-gallery__container">
+         <div class="news-detail__gallery">
+            <div class="news-detail__slider swiper">
+               <div class="news-detail__slider-nav swiper-nav">
+                  <button type="button" class="swiper-button-prev"></button>
+                  <button type="button" class="swiper-button-next"></button>
+               </div>
+               <div class="news-detail__wrapper swiper-wrapper" data-gallery>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_7.png">
+                     <img src="@img/news-card_7.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_8.png">
+                     <img src="@img/news-card_8.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_9.png">
+                     <img src="@img/news-card_9.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_6.png">
+                     <img src="@img/news-card_6.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_5.png">
+                     <img src="@img/news-card_5.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_4.png">
+                     <img src="@img/news-card_4.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_3.png">
+                     <img src="@img/news-card_3.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_2.png">
+                     <img src="@img/news-card_2.png" alt="">
+                  </div>
+                  <div class="news-detail__slide swiper-slide" data-src="@img/news-card_1.png">
+                     <img src="@img/news-card_1.png" alt="">
+                  </div>
+               </div>
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</main>
+@@include('html/_footer.htm',{})

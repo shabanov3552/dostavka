@@ -1,0 +1,141 @@
+.about {
+   background: var(--dark-black);
+   padding-top: rem(80);
+   padding-bottom: rem(125);
+
+   @media (max-width:$md) {
+      padding-top: rem(32);
+      padding-bottom: rem(80);
+   }
+
+   // .about_grey
+
+   &_grey {
+      background: var(--dark-gray);
+   }
+
+   // .about__container
+
+   &__container {}
+
+   // .about__grid
+
+   &__grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      margin-bottom: rem(50);
+
+      @media (max-width:$md) {
+         grid-template-columns: 1fr;
+         gap: 40px;
+         justify-items: center;
+      }
+   }
+
+   // .about__image-ibg
+
+   &__image-ibg {
+      width: 960px;
+      height: 557px;
+      position: sticky;
+      top: 20px;
+
+      @media (max-width:$pc) {
+         width: 568px;
+         height: 327px;
+      }
+
+      @media (max-width:$xl) {
+         width: 452px;
+         height: 261px;
+      }
+
+      @media (max-width:$lg) {
+         width: 343px;
+         height: 197px;
+      }
+
+      @media (max-width:$md) {
+         grid-row: 1/2;
+         position: relative;
+         top: auto;
+      }
+
+      @media (max-width:$xs) {
+         width: 100%;
+      }
+   }
+
+   // .about__content
+
+   &__content {
+      .text-card {
+         max-width: 687px;
+      }
+
+      .text-card__text {
+         @media (max-width:$sm) {
+            font-size: 18px;
+         }
+      }
+   }
+
+   // .about__title
+
+   &__title {
+      margin-bottom: rem(48);
+   }
+
+   // .about__descr
+
+   &__descr {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 125%;
+
+      ul,
+      ol {
+         padding-left: rem(25);
+         margin-bottom: rem(24);
+
+         li {
+            padding: rem(5) 0;
+         }
+      }
+
+      ul {
+         padding-left: rem(25);
+         margin-bottom: rem(24);
+
+         li {
+            list-style: disc;
+         }
+      }
+
+      a {
+         color: var(--light-blue);
+
+         @media (any-hover: hover) {
+            &:hover {
+               text-decoration: underline;
+            }
+         }
+      }
+
+      p {
+         margin-bottom: rem(24);
+      }
+   }
+}
+
+.about-gallery {
+   padding: rem(120) 0;
+
+   @media (max-width:$md) {
+      padding: rem(80) 0;
+   }
+
+   // .about-gallery__container
+
+   &__container {}
+}

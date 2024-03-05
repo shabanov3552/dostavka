@@ -1,0 +1,96 @@
+@@include('html/_header.htm',{
+"title":"Контакты",
+"modClass":"contacts-page"
+})
+<main class="page">
+   <div class="contacts">
+      <div class="contacts__container">
+         @@include('html/_breadcrumbs.htm',{})
+         <h1 class="contacts__title main-title">Контакты</h1>
+         <div class="contacts__row">
+            <div class="contacts__chunk">
+               <a href="tel:8 (800) 222-57-67" class="contacts__tel contacts__tel_main">8 (800) 222-57-67</a>
+               <a href="mailto:info@meifort.ru" class="contacts__mail">info@meifort.ru</a>
+               <a href="mailto:china@meifort.ru" class="contacts__mail">china@meifort.ru</a>
+               <div class="contacts__inner-row">
+                  <div class="contacts__inner-col">
+                     <div class="contacts__name">Отдел логистики</div>
+                     <a href="tel:8 (4162) 57-77-88" class="contacts__tel">8 (4162) 57-77-88</a>
+                  </div>
+                  <div class="contacts__inner-col">
+                     <div class="contacts__socials">
+                        <a href="" class="contacts__social-link"><img src="@img/icons/icon-soc-contacts_whatsapp.svg" alt=""></a>
+                        <a href="" class="contacts__social-link"><img src="@img/icons/icon-soc-contacts_telegram.svg" alt=""></a>
+                        <a href="" class="contacts__social-link"><img src="@img/icons/icon-soc-contacts_weechat.svg" alt=""></a>
+                     </div>
+                     <a href="tel:+7 914 557-77-88" class="contacts__tel">+7 914 557-77-88</a>
+                  </div>
+               </div>
+            </div>
+            <div class="contacts__chunk">
+               <h3 class="contacts__subtitle">Адрес</h3>
+               <div class="contacts__name">Россия</div>
+               <div class="contacts__address">г. Благовещенск, ул. Чайковского, дом 3, офис 214</div>
+               <div class="contacts__name">Китай</div>
+               <div class="contacts__address">КНР, г. Хэйхэ, район Айхой, ул. Синань, д. 39</div>
+            </div>
+         </div>
+         <h2 class="contacts__title main-title">Реквизиты</h2>
+         <div class="contacts__requ">
+            <h3 class="contacts__subtitle">Общество с ограниченной ответственностью «МЭЙФОРТ».</h3>
+            <div class="contacts__grid">
+               <div class="contacts__bank">
+                  <div class="contacts__bank-row">
+                     <div class="contacts__bank-name">ИНН</div>
+                     <div class="contacts__bank-value">2801270362</div>
+                  </div>
+                  <div class="contacts__bank-row">
+                     <div class="contacts__bank-name">КПП</div>
+                     <div class="contacts__bank-value">280101001</div>
+                  </div>
+                  <div class="contacts__bank-row">
+                     <div class="contacts__bank-name">ОГРН</div>
+                     <div class="contacts__bank-value">1222800004646</div>
+                  </div>
+                  <div class="contacts__bank-row">
+                     <div class="contacts__bank-name">Банк</div>
+                     <div class="contacts__bank-value">Ф-Л ДАЛЬНЕВОСТОЧНЫЙ ПАО БАНКА «ФК ОТКРЫТИЕ»</div>
+                  </div>
+                  <div class="contacts__bank-row">
+                     <div class="contacts__bank-name">Расч./счет</div>
+                     <div class="contacts__bank-value">40702810801060001290</div>
+                  </div>
+                  <div class="contacts__bank-row">
+                     <div class="contacts__bank-name">Кор. счет </div>
+                     <div class="contacts__bank-value">30101810845250000999</div>
+                  </div>
+                  <div class="contacts__bank-row">
+                     <div class="contacts__bank-name">БИК</div>
+                     <div class="contacts__bank-value">044525999</div>
+                  </div>
+               </div>
+               <div class="contacts__addresses">
+                  <div class="contacts__name">Почтовый адрес</div>
+                  <div class="contacts__address">675002, Амурская область, г. Благовещенск, ул. Чайковского, д. 3, офис 214</div>
+                  <div class="contacts__name">Юридический адрес</div>
+                  <div class="contacts__address">675002, Амурская область, г. Благовещенск, ул. Чайковского, д. 3, офис 214</div>
+                  <a href="" class="contacts__link btn-red">Скачать реквизиты</a>
+               </div>
+            </div>
+         </div>
+         <div class="contacts__map">
+            <div id="map"></div>
+            <script>
+               @@include('js/files/map.js', {})
+            </script>
+         </div>
+
+      </div>
+   </div>
+
+   @@include('html/_page-form.htm',{
+   "title":"Напишите нам",
+   "text":"Есть вопрос или предложение? Воспользуйтесь формой обратной связи"
+   })
+</main>
+@@include('html/_footer.htm',{})

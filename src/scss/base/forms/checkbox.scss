@@ -52,7 +52,7 @@
 
 		/* Checked */
 		&:checked+.checkbox__chunk {
-			background: #4C4C4C url('@img/icons/icon_check-active.svg') bottom no-repeat;
+			background: url('@img/icons/icon_check-active.svg') bottom no-repeat;
 			box-shadow: none;
 		}
 

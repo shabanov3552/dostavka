@@ -319,12 +319,12 @@ class Popup {
 				null;
 
 		const buttons = document.querySelector(`[${this.options.attributeOpenButton} = "${classInHash}"]`) ? document.querySelector(`[${this.options.attributeOpenButton} = "${classInHash}"]`) : document.querySelector(`[${this.options.attributeOpenButton} = "${classInHash.replace('.', "#")}"]`);
-
-		this.youTubeCode = buttons.getAttribute(this.options.youtubeAttribute) ?
-			buttons.getAttribute(this.options.youtubeAttribute) :
-			null;
-
-		if (buttons && classInHash) this.open(classInHash);
+		if (buttons !== null) {
+			this.youTubeCode = buttons.getAttribute(this.options.youtubeAttribute) ?
+				buttons.getAttribute(this.options.youtubeAttribute) :
+				null;
+		}
+		if (classInHash) this.open(classInHash);
 	}
 	// Утсановка хэша
 	_setHash() {

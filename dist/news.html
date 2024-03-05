@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240304054425">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240306010815">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,9 +53,9 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="header__contacts">
-					<a href="" class="header__price">Получить прайс-лист</a>
-					<a href="" class="header__callback">Заказать звонок</a>
+				<div class="header__contacts" data-da=".menu__body, 991.98">
+					<div class="header__price">Получить прайс-лист</div>
+					<a href="" class="header__callback" data-popup="#callback">Заказать звонок</a>
 					<div class="header__social">
 						<a href="" class="header__link-social">
 							<img src="img/icons/soc_whatsapp.svg" alt="">
@@ -157,7 +157,8 @@
 						</a>
 					</div>
 					<div class="pagging">
-						<a href="" class="pagging__arrow pagging__arrow_disabled">
+
+						<a href="" class="pagging__arrow"> <!-- pagging__arrow_disabled класс добавить к стрелке если первая страница  -->
 							<svg>
 								<use xlink:href="img/icons/icons.svg#icon_pagging-left"></use>
 							</svg>
@@ -185,52 +186,11 @@
 								<a href="" class="pagging__item">24</a>
 							</li>
 						</ul>
-						<a href="" class="pagging__arrow">
+						<a href="" class="pagging__arrow"> <!-- pagging__arrow_disabled класс добавить к стрелке если последняя страница  -->
 							<svg>
 								<use xlink:href="img/icons/icons.svg#icon_pagging-right"></use>
 							</svg>
 						</a>
-					</div>
-				</div>
-			</div>
-			<div class="page-form">
-				<div class="page-form__container">
-					<div class="page-form__content">
-						<h2 class="page-form__title main-title">Узнайте о наших услугах подробнее</h2>
-						<div class="page-form__text">Задайте вопрос или расскажите о своих задачах. Наши специалисты проконсультируют вас.</div>
-					</div>
-					<div class="page-form__form">
-						<form action="" data-parsley-validate data-parsley-trigger="change">
-							<div class="form__line">
-								<label for="" class="form__label">Ваше имя*</label>
-								<input id="" type="text" name="" required class="form__input">
-								<svg class="form__clear-svg">
-									<use xlink:href="img/icons/icons.svg#input_clear"></use>
-								</svg>
-							</div>
-							<div class="form__line">
-								<label for="" class="form__label">Телефон*</label>
-								<input required id="" type="tel" name="" class="form__input js_phone">
-								<svg class="form__clear-svg">
-									<use xlink:href="img/icons/icons.svg#input_clear"></use>
-								</svg>
-							</div>
-							<div class="form__line">
-								<label for="" class="form__label">Комментарий</label>
-								<textarea required id="" autocomplete="off" name="" class="form__input"></textarea>
-								<svg class="form__clear-svg">
-									<use xlink:href="img/icons/icons.svg#input_clear"></use>
-								</svg>
-							</div>
-							<div class="form__check">
-								<label class="checkbox">
-									<input required class="checkbox__input" type="checkbox" value="1" name="consent">
-									<span class="checkbox__chunk"></span>
-									<span class="checkbox__text">Я даю свое <a href="">согласие на обработку персональных данных</a></span>
-								</label>
-							</div>
-							<button type="submit" class="form__button btn-red">Получить коммерческое предложение</button>
-						</form>
 					</div>
 				</div>
 			</div>
@@ -365,8 +325,8 @@
 						<div class="share">
 							<div class="share__social">
 								<!-- uSocial -->
-								<!-- <script async src="https://usocial.pro/usocial/usocial.js?uid=21cd4b58eaf61697&v=6.1.5&_v=20240304054425" data-script="usocial" charset="utf-8"></script>
-							<div class="uSocial-Share" data-pid="b7450283dbc9e941ee22b283d6036804" data-type="share" data-options="round-rect,style1,default,absolute,horizontal,size48,eachCounter0,counter0,nomobile,mobile_position_right" data-social="vk,ok,telegram,wa,vi"></div> -->
+								<script async src="https://usocial.pro/usocial/usocial.js?uid=21cd4b58eaf61697&v=6.1.5&_v=20240306010815" data-script="usocial" charset="utf-8"></script>
+								<div class="uSocial-Share" data-pid="b7450283dbc9e941ee22b283d6036804" data-type="share" data-options="round-rect,style1,default,absolute,horizontal,size48,eachCounter0,counter0,nomobile,mobile_position_right" data-social="vk,ok,telegram,wa,vi"></div>
 								<!-- /uSocial -->
 							</div>
 							<div class="share__copy-url">
@@ -377,7 +337,7 @@
 										<use xlink:href="img/icons/icons.svg#input_clear"></use>
 									</svg>
 								</div>
-								<button type="button" class="share__button">Скопировать ссылку</button>
+								<button type="button" class="share__button btn-red">Скопировать ссылку</button>
 							</div>
 						</div>
 					</div>
@@ -386,11 +346,10 @@
 		</div>
 		<!-- Модалка шаринга -->
 		<!-- Спасибо -->
-		<div id="thanks" aria-hidden="true" class="popup">
+		<div id="thanks" aria-hidden="true" class="popup popup_center">
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<div class="popup__header">
-						<div class="popup__title">Спасибо</div>
 						<button data-close type="button" class="popup__close">
 							<svg class="popup__close-svg">
 								<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
@@ -398,12 +357,10 @@
 						</button>
 					</div>
 					<div class="popup__main">
-						<div class="popup__text">Мы свяжемся с вами в ближайшее время для уточнения информации</div>
-						<button data-close type="button" class="popup__close">
-							Ok
-						</button>
-						<div class="popup__icon">
-							<img src="img/icons/popup__icon.svg" alt="">
+						<div class="thanks-block">
+							<img src="img/thanks.svg" alt="">
+							<div class="thanks-block__title main-title">Спасибо за обращение</div>
+							<div class="thanks-block__text">Наши специалисты свяжутся с вами в ближайшее время.</div>
 						</div>
 					</div>
 				</div>
@@ -411,11 +368,11 @@
 		</div>
 		<!-- Спасибо -->
 		<!-- Заказать звонок -->
-		<div id="callback" aria-hidden="true" class="popup">
+		<div id="callback" aria-hidden="true" class="popup popup_center">
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<div class="popup__header">
-						<div class="popup__title">Заказ звонка</div>
+						<div class="popup__title main-title">Заказ звонка</div>
 						<button data-close type="button" class="popup__close">
 							<svg class="">
 								<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
@@ -425,32 +382,29 @@
 					<div class="popup__main">
 						<div class="popup__text">Оставьте контактные данные и мы вам перезвоним</div>
 						<div class="popup__form">
-							<form action="" data-parsley-validate data-parsley-trigger="change" required="" class="form">
+							<form action="" data-parsley-validate data-parsley-trigger="change">
 								<div class="form__line">
-									<label for="p-callback-2.1" class="form__label">Ваше имя</label>
-									<input id="p-callback-2.1" type="text" class="form__input">
+									<label for="" class="form__label">Ваше имя*</label>
+									<input id="" type="text" name="" required class="form__input">
 									<svg class="form__clear-svg">
 										<use xlink:href="img/icons/icons.svg#input_clear"></use>
 									</svg>
 								</div>
 								<div class="form__line">
-									<label for="p-callback-2.2" class="form__label">Телефон *</label>
-									<input required id="p-callback-2.2" type="tel" class="form__input js_phone">
+									<label for="" class="form__label">Телефон*</label>
+									<input required id="" type="tel" name="" class="form__input js_phone">
 									<svg class="form__clear-svg">
 										<use xlink:href="img/icons/icons.svg#input_clear"></use>
 									</svg>
 								</div>
-								<div class="form__line">
-									<label for="p-callback-2.3" class="form__label">Комментарий</label>
-									<textarea id="p-callback-2.3" autocomplete="off" name="" placeholder="" class="form__input"></textarea>
-									<svg class="form__clear-svg">
-										<use xlink:href="img/icons/icons.svg#input_clear"></use>
-									</svg>
+								<div class="form__check">
+									<label class="checkbox">
+										<input required class="checkbox__input" type="checkbox" value="1" name="consent" checked>
+										<span class="checkbox__chunk"></span>
+										<span class="checkbox__text">Я даю свое <a href="">согласие на обработку персональных данных</a></span>
+									</label>
 								</div>
-								<div class="form__footer">
-									<button type="submit" class="form__button btn btn_red">Отправить</button>
-									<div class="form__consent">Отправляя данные, я даю свое <a href="" class="form__consent-link">согласие на обработку перс. данных</a></div>
-								</div>
+								<button type="submit" class="form__button btn-red">Отправить</button>
 							</form>
 						</div>
 					</div>
@@ -458,9 +412,61 @@
 			</div>
 		</div>
 		<!-- Заказать звонок -->
+		<!-- Расчет доставки -->
+		<div id="delivery" aria-hidden="true" class="popup popup_center">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__header">
+						<div class="popup__title main-title">Расчет доставки</div>
+						<button data-close type="button" class="popup__close">
+							<svg class="">
+								<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="popup__main">
+						<div class="popup__text">Оставьте контактные данные и мы свяжемся с вами в ближайшее время для уточнения информации</div>
+						<div class="popup__form">
+							<form action="" data-parsley-validate data-parsley-trigger="change">
+								<div class="form__line">
+									<label for="" class="form__label">Ваше имя*</label>
+									<input id="" type="text" name="" required class="form__input">
+									<svg class="form__clear-svg">
+										<use xlink:href="img/icons/icons.svg#input_clear"></use>
+									</svg>
+								</div>
+								<div class="form__line">
+									<label for="" class="form__label">Телефон*</label>
+									<input required id="" type="tel" name="" class="form__input js_phone">
+									<svg class="form__clear-svg">
+										<use xlink:href="img/icons/icons.svg#input_clear"></use>
+									</svg>
+								</div>
+								<div class="form__line">
+									<label for="" class="form__label">Комментарий</label>
+									<textarea required id="" autocomplete="off" name="" class="form__input"></textarea>
+									<svg class="form__clear-svg">
+										<use xlink:href="img/icons/icons.svg#input_clear"></use>
+									</svg>
+								</div>
+								<div class="form__check">
+									<label class="checkbox">
+										<input required class="checkbox__input" type="checkbox" value="1" name="consent" checked>
+										<span class="checkbox__chunk"></span>
+										<span class="checkbox__text">Я даю свое <a href="">согласие на обработку персональных данных</a></span>
+									</label>
+								</div>
+								<button type="submit" class="form__button btn-red">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Расчет доставки -->
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20240304054425" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20240304054425"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20240306010815" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20240306010815"></script>
 </body>
 
 </html>

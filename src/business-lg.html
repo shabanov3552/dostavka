@@ -1,0 +1,102 @@
+@@include('html/_header.htm',{
+"title":"Крупный бизнес",
+"modClass":"business-page"
+})
+<main class="page">
+
+   <div class="services-detail"> <!-- Добавить класс services-detail_grey на страницах Агентирование, Сертификация, Таможенное оформление, -->
+      <div class="services-detail__container">
+         @@include('html/_breadcrumbs.htm',{})
+         <div class="services-detail__grid">
+            <div class="services-detail__content">
+               <h1 class="services-detail__title main-title">Крупный бизнес</h1>
+               <div class="services-detail__descr">
+                  <p>Сегодня Крупный бизнес все чаще обращается к услугам по доставке товаров из Китая, что обусловлено рядом преимуществ и особенностей данного направления. Прежде всего, это возможность закупать продукцию напрямую у производителей или оптовых поставщиков, что позволяет значительно снизить цены и повысить конкурентоспособность своего бизнеса.</p>
+                  <p>Для успешной работы в этой сфере необходимо учитывать все особенности и преимущества направления, а также тщательно выбирать партнеров и поставщиков.</p>
+               </div>
+               @@include('html/_text-card.htm',{
+               "class":"grey",
+               "src":"img/text-card-star_gradient.svg",
+               "text":"Доставка товаров из Китая может стать выгодным и перспективным направлением для малого бизнеса."
+               })
+            </div>
+            <div class="services-detail__image-ibg services-detail__image-ibg_contain"><img src="@img/business-lg.svg" alt=""></div>
+         </div>
+      </div>
+   </div>
+
+   <div class="bs-advantages-block">
+      <div class="bs-advantages-block__container">
+         <h2 class="bs-advantages-block__title main-title">Преимущества</h2>
+         <div class="bs-advantages-block__grid">
+            @@include('html/_bs-advatages.htm',{
+            "title":"Широкий ассортимент продукции",
+            "text":"На китайских площадках представлено огромное количество товаров различных категорий: от одежды и аксессуаров до электроники и бытовой техники",
+            "number":"01"
+            })
+            @@include('html/_bs-advatages.htm',{
+            "title":"Качество товаров",
+            "text":"Несмотря на то что многие считают китайскую продукцию некачественной, на самом деле среди китайских товаров можно найти качественные и надежные изделия",
+            "number":"02"
+            })
+            @@include('html/_bs-advatages.htm',{
+            "title":"Конкурентоспособные цены",
+            "text":"Благодаря тому что малый бизнес закупает товары напрямую у производителей, он может устанавливать конкурентоспособные цены на свою продукцию",
+            "number":"03"
+            })
+            @@include('html/_bs-advatages.htm',{
+            "title":"Удобство доставки",
+            "text":"Сегодня существует множество компаний, специализирующихся на доставке товаров из Китая, которые предлагают различные варианты доставки: от авиаперевозки до доставки сборными грузами",
+            "number":"04"
+            })
+         </div>
+      </div>
+   </div>
+
+   <div class="features">
+      <div class="features__container">
+         <h2 class="features__title main-title">Особенности</h2>
+         <div class="features__row">
+            <div class="features__card">
+               <div class="features__card-image"><img src="@img/coin-red.svg" alt=""></div>
+               <div class="features__card-title">Сложность таможенного оформления</div>
+               <div class="features__card-text">Необходимо грамотно оформить документы и пройти все таможенные процедуры, чтобы избежать задержек и дополнительных расходов</div>
+            </div>
+            <div class="features__card">
+               <div class="features__card-image"><img src="@img/coin-gold.svg" alt=""></div>
+               <div class="features__card-title">Вероятность обмана со стороны поставщиков</div>
+               <div class="features__card-text">Чтобы избежать мошенничества, необходимо тщательно проверять репутацию поставщиков и заключать контракты с учетом всех возможных рисков</div>
+            </div>
+            <div class="features__card">
+               <div class="features__card-image"><img src="@img/coin-white.svg" alt=""></div>
+               <div class="features__card-title">Зависимость стоимости от курса валют</div>
+               <div class="features__card-text">Цены на товары указываются в китайских юанях, поэтому изменение курса валют может сказаться на стоимости товаров и прибыли бизнеса</div>
+            </div>
+         </div>
+         <h3 class="features__subtitle">Варианты доставки</h3>
+         <div class="features__row-cargo">
+            <div class="features__card">
+               <div class="features__card-image"><img src="@img/logo-small.svg" alt=""></div>
+               <div class="features__card-title">Доставка под ключ</div>
+               <div class="features__card-text">Вы полностью делегируете процесс выкупа и доставки нашей компании</div>
+            </div>
+            <div class="features__card">
+               <div class="features__card-image"><img src="@img/text-card-star_gradient.svg" alt=""></div>
+               <div class="features__card-title">Доставка под ваш контракт</div>
+               <div class="features__card-text">Вы сами покупаете товар у китайского поставщика и доверяете нам доставку из Китая в Россию</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   @@include('html/_services-feed.htm',{
+   "class":"services-feed_grey"
+   })
+
+   @@include('html/_page-form.htm',{
+   "title":"Расчет доставки",
+   "text":"Узнайте стоимость и сроки доставки вашего груза уже сегодня"
+   })
+
+</main>
+@@include('html/_footer.htm',{})

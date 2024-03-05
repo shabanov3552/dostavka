@@ -222,3 +222,56 @@ body {
 @import "news";
 @import "services";
 @import "cases";
+@import "contacts";
+@import "business";
+@import "about";
+
+.not-found {
+	padding-top: rem(120);
+	padding-bottom: rem(300);
+	background: url('@img/not-found-bg.png') bottom center no-repeat;
+
+	@media (max-width:$xl) {
+		background: url('@img/not-found-bg-1000.png') bottom left / 100% no-repeat;
+	}
+
+	@media (max-width:$xxl) {
+		padding-bottom: rem(240);
+	}
+
+	@media (max-width:$xl) {
+		padding-top: rem(80);
+		padding-bottom: rem(117);
+	}
+
+	@media (max-width:$md) {
+		padding-bottom: rem(401);
+		background: url('@img/not-found-bg-mob.png') bottom center no-repeat;
+	}
+
+	// .not-found__container
+
+	&__container {}
+
+	// .not-found__title
+
+	&__title {
+		margin-bottom: rem(24);
+
+		@media (max-width:$lg) {
+			font-size: 52px;
+		}
+	}
+
+	// .not-found__text
+
+	&__text {
+		max-width: 604px;
+		font-size: 24px;
+		line-height: 120%;
+
+		@media (max-width:$lg) {
+			max-width: 343px;
+		}
+	}
+}

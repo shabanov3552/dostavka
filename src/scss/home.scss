@@ -363,10 +363,21 @@
    &__link {
       padding-bottom: 32px;
       border-bottom: 1px solid #fff;
+      padding-right: 0;
+
 
       &::after {
          position: static;
          transform: translateY(0px);
+      }
+
+      @media (max-width:$xxs) {
+         display: block;
+         padding-bottom: rem(18);
+
+         &::after {
+            margin-top: rem(15);
+         }
       }
    }
 }
