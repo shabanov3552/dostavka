@@ -1169,17 +1169,31 @@
    }
 }
 
+
+
 .customs {
-   padding: rem(120) 0;
    background: var(--dark-black);
+   padding: rem(120) 0;
 
    @media (max-width:$md) {
       padding: rem(80) 0;
    }
 
+   // .customs_bg
+
+   &_bg {
+      background: var(--dark-black) url(@img/sd-support-hieroglyph.svg) 100% calc(100% - 107px) no-repeat;
+   }
+
    // .customs__container
 
    &__container {}
+
+   // .customs__main-title
+
+   &__main-title {
+      margin-bottom: rem(80);
+   }
 
    // .customs__title
 

@@ -28,7 +28,44 @@
       </div>
    </div>
 
-   @@include('html/_customs.htm',{})
+   <div class="customs">
+      <div class="customs__container">
+         <h3 class="customs__title">Наша компания предоставляет услуги лицензированного таможенного представителя, который обеспечивает необходимое таможенное оформление вашего товара.</h3>
+         <div class="customs__subtitle">В процессе оформления партии товара обязательны:</div>
+         <div class="customs__grid">
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Полное заполнение декларации с верным указанием кода ТН ВЭД"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Осмотр ввозимого груза"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Расчет ставки по коду ТН ВЭД"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Обязательная оплата пошлин и других платежей"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Получение разрешений на прохождение границы"
+            })
+            @@include('html/_text-card.htm',{
+            "class":"gold",
+            "src":"img/text-card-star_no-gradient.svg",
+            "text":"Предоставление дополнительных документов таможенным органам по запросу."
+            })
+         </div>
+      </div>
+   </div>
 
    @@include('html/_work-stages.htm',{})
 
