@@ -528,7 +528,7 @@
    }
 
    @media (max-width:$sm) {
-      background: var(--dark-black) url(../img/page-form-bg.svg) -790px 100% / 2578px 1170px repeat-x;
+      background: var(--dark-black) url(@img/page-form-bg-mob.svg) center bottom / cover repeat-x;
    }
 
    &::after {
@@ -596,6 +596,7 @@
          padding: rem(40) rem(16);
          margin: 0px rem(-16);
          border-radius: 0;
+         backdrop-filter: blur(5px);
       }
 
       .form__button {
