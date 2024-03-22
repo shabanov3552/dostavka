@@ -3622,6 +3622,27 @@ body::after {
   line-height: 120%;
 }
 
+.page-text {
+  line-height: 120%;
+}
+
+.page-text > * {
+  margin: 0.9375rem 0;
+}
+
+.page-text ul {
+  line-height: 25px;
+  padding-left: 1.5625rem;
+}
+
+.page-text ul li {
+  list-style-type: disc;
+}
+
+.page-text ul li:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+
 .swiper {
   overflow: hidden;
   min-width: 0;

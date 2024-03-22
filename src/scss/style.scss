@@ -275,3 +275,24 @@ body {
 		}
 	}
 }
+
+.page-text {
+	line-height: 120%;
+
+	&>* {
+		margin: rem(15) 0;
+	}
+
+	ul {
+		line-height: 25px;
+		padding-left: rem(25);
+
+		li {
+			list-style-type: disc;
+
+			&:not(:last-child) {
+				margin-bottom: rem(15);
+			}
+		}
+	}
+}

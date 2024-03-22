@@ -11612,7 +11612,7 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }));
         }), 1500);
-        window["FLS"] = true;
+        window["FLS"] = false;
         isWebp();
         addLoadedClass();
         menuInit();
