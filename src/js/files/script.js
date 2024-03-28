@@ -452,7 +452,9 @@ function dropdownAction(e, ddWrapper, ddActive) {
       }
 
       ddWrapper.classList.toggle('_dd-active');
-      e.preventDefault();
+      if (!(target.closest('.footer') && window.matchMedia("(min-width: 576.98px)").matches)) {
+         e.preventDefault();
+      }
    }
 }
 

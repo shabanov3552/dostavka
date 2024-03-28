@@ -154,17 +154,13 @@
 .adv-card {
    background: var(--light-red);
    border-radius: 20px;
-   padding: rem(30) rem(52) rem(30) rem(30);
    position: relative;
    overflow: hidden;
    min-height: 167px;
+   padding: rem(30) rem(0) rem(30) rem(0);
 
    @media (max-width:$xxl) {
-      padding: rem(24) rem(45) rem(46) rem(31);
-   }
-
-   @media (max-width:$sm) {
-      padding: rem(24) rem(61) rem(50) rem(31);
+      padding: rem(24) rem(0) rem(50) rem(0);
    }
 
    // .adv-card__title
@@ -173,6 +169,7 @@
       font-size: 24px;
       margin-bottom: rem(16);
       overflow-wrap: anywhere;
+      padding: rem(0) rem(30);
    }
 
    // .adv-card__text
@@ -182,18 +179,15 @@
       line-height: 127%;
       position: relative;
       z-index: 2;
+      padding: rem(0) rem(52) rem(0) rem(30);
 
-      // &::before {
-      //    content: '';
-      //    position: absolute;
-      //    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3225665266106442) 70%);
-      //    background: linear-gradient(270deg, rgba(24, 24, 24, 0.6) 0%, rgba(24, 24, 24, 0.4) 70.5%, rgba(24, 24, 24, 0) 100%);
-      //    z-index: -1;
-      //    top: -30px;
-      //    left: -30px;
-      //    width: 482px;
-      //    height: 570px;
-      // }
+      @media (max-width:$xxl) {
+         padding: rem(0) rem(45) rem(0) rem(31);
+      }
+
+      @media (max-width:$sm) {
+         padding: rem(0) rem(61) rem(0) rem(31);
+      }
    }
 
    // .adv-card__number
@@ -843,6 +837,15 @@
       border-radius: 0 0 20px 20px;
       padding: rem(41) rem(40) rem(32) rem(25);
       line-height: 121%;
+
+      ul {
+         padding-left: rem(25);
+
+         li {
+            list-style-type: disc;
+            padding: rem(7) 0;
+         }
+      }
 
       @media (max-width:$md) {
          padding: rem(16);
